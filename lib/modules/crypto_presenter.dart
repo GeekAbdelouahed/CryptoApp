@@ -17,7 +17,7 @@ class CryptoListPresenter {
   void loadCurrencies() {
     _repository
         .fetchCurrencies()
-        .then((c) => _view.onLoadCryptoComplete(c))
+        .then(_view.onLoadCryptoComplete)
         .catchError((onError) => _view.onLoadCryptoError());
   }
 }

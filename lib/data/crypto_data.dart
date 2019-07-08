@@ -6,7 +6,7 @@ class Crypto {
   String percent_change_1h;
   String symbol;
 
-  Crypto({this.name, this.price_usd, this.percent_change_1h,this.symbol});
+  Crypto({this.name, this.price_usd, this.percent_change_1h, this.symbol});
 
   Crypto.fromMap(Map<String, dynamic> map)
       : name = map['name'],
